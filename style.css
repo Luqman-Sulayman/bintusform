@@ -1,13 +1,65 @@
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
+
+@media only screen and (max-width: 600px) {
+  div.container {
+    width: 180px;
+}
+.container {
+  width: 200px;
+}
+div.header {
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+div.form-container {
+  width: 180px;
+  margin-left: -30px;
+  justify-content: center;
+  align-content: center;
+  padding: 25px;
+  box-shadow: #007bff;
+}
+button.btn-submit {
+  width: 210px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.container {
+    width: 800px;
+    padding: 50px;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+
+  }
+}
+@media only screen and (min-width: 2000px) {
+  div.container {
+    width: 100rem;
+    height: fit-content;
+    
+    
+  } 
+  div.letterhead-container {
+    width: 900px;
+  }
+  div.form-container {
+    width: 900px;
+  }
+  .form-container {
+    width: 100em;
+  }
+  .form-group {
+    width: 800px;
   }
 }
 
 .container {
   background-color: #fff;
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
   padding: 60px;
   box-shadow: 0 0 10px rgba(19, 116, 207, 0.1);
@@ -61,8 +113,12 @@ form textarea {
 }
 
 .btn-submit {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-shrink: calc();
   margin-top: 20px;
-  width: 43em;
+  width: 700px;
   background-color: #007bff;
   color: white;
   padding: 12px;
@@ -97,7 +153,8 @@ div.header {
   padding: 20px;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(27, 84, 241, 0.1);
+  border-color: #257fe6;
 }
 
 .footer {

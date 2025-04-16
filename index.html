@@ -47,7 +47,7 @@
             <input type="tel" id="phone" wire:model.blur="phone" placeholder="Enter your phone number" required="">
         </div>
 
-        <div class="form-group" style="width: 43em;">
+        <div class="form-group">
             <label for="destination">Select Destination(s)</label>
             <select id="destination" wire:model.blur="destination_country" name="destination" multiple="" required="">
                 <option value="usa">United States</option>
@@ -63,7 +63,7 @@
             </select>
         </div>
 
-        <div class="form-group" style="width: 43em;">
+        <div class="form-group">
             <label for="visa-type">Visa Type</label>
             <select id="visa-type" wire:model.blur="visa_type" required="">
                 <option value="">Select visa type</option>
@@ -98,7 +98,7 @@
         <button wire:loading.attr="disabled" type="submit" class="btn-submit">Submit Booking <span wire:loading="" style="display: none;"><i class="fa fa-spin fa-spinner"></i></span></button>
 </div>
 
-        <div class="footer" style="width: 45em;">
+        <div class="footer">
             <p>
                 <span>Bintus Travel Consultant</span> | Address: 123 Travel Street, City, Country | Phone: +123 456 7890 | Email: info@bintusconsult.com
             </p>
