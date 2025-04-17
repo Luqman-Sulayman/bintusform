@@ -1,33 +1,27 @@
-@media only screen and (max-width: 768px) {
-.container {
-    width: 800px;
-    padding: 50px;
-}
-.letterhead-container img {
-  display: flex;
-  flex-direction: column;
-}
-}
-@media only screen and (max-width: 480px) {
-  div.container {
-    width: 100rem;
-    height: fit-content;
-  } 
-  div.letterhead-container {
-    width: 900px;
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
   }
-  div.form-container {
-    width: 900px;
-  }
-  .form-container {
-    width: 100em;
-  }
-  .form-group {
-    width: 800px;
-  }
-  .letterhead-container img {
-    display: flex;
+  .letterhead-container {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group label {
+    font-size: 0.95rem;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+  }
+  .letterhead-container {
+    width: 13rem;
+  }
+  button.btn-submit {
+    width: auto;
   }
 }
 
@@ -39,22 +33,22 @@
 }
 .container {
   background-color: #fff;
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 60px;
   box-shadow: 0 0 10px rgba(19, 116, 207, 0.1);
-  border: 2px solid #3750c0;
+  border: 2px solid #2144e2;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f2f2f2;
-  margin: 0;
-  padding: 40px 0;
+  padding: 1rem;
 }
 
 .letterhead-container {
   max-width: 1200px;
+  background-color: #0056b3;
   margin: 0 auto;
   border: 2px solid #0056b3;
   border-radius: 8px;
@@ -64,9 +58,10 @@ body {
   justify-content: center;
 }
 
-.letterhead img {
-  height: 60px;
-  margin-right: 20px;
+.letterhead-container img {
+  max-width: 120px;
+  height: auto;
+  
 }
 
 .letterhead h2 {
@@ -93,6 +88,7 @@ body {
 
 .form-group textarea {
   resize: vertical;
+  min-height: 100px;
 }
 
 .btn-submit {
@@ -110,33 +106,15 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-div.header {
-  background-color: #0056b3;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-text {
-  text-align: center;
-  flex: 1;
-  padding: 0 20px;
-}
 
 .btn-submit:hover {
   background-color: #0056b3;
 }
 
-.form-container {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(27, 84, 241, 0.1);
-  border-color: #257fe6;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
 }
 
 .footer {
