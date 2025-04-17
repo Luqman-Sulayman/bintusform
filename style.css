@@ -1,47 +1,17 @@
-
-@media only screen and (max-width: 600px) {
-  div.container {
-    width: 180px;
-}
-.container {
-  width: 200px;
-}
-div.header {
-  width: 180px;
-  align-items: center;
-  justify-content: center;
- 
-}
-div.form-container {
-  width: 180px;
-  margin-left: -30px;
-  justify-content: center;
-  align-content: center;
-  padding: 25px;
-  box-shadow: #007bff;
-}
-button.btn-submit {
-  width: 210px;
-}
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 .container {
     width: 800px;
     padding: 50px;
 }
+.letterhead-container img {
+  display: flex;
+  flex-direction: column;
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-
-  }
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (max-width: 480px) {
   div.container {
     width: 100rem;
     height: fit-content;
-    
-    
   } 
   div.letterhead-container {
     width: 900px;
@@ -55,8 +25,18 @@ button.btn-submit {
   .form-group {
     width: 800px;
   }
+  .letterhead-container img {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   background-color: #fff;
   width: 800px;
@@ -78,7 +58,10 @@ body {
   margin: 0 auto;
   border: 2px solid #0056b3;
   border-radius: 8px;
-  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .letterhead img {
@@ -92,15 +75,15 @@ body {
   text-transform: uppercase;
 }
 
-form label {
+.form-group label {
   font-weight: 600;
   margin-top: 20px;
   display: block;
 }
 
-form input,
-form select,
-form textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -108,7 +91,7 @@ form textarea {
   border-radius: 4px;
 }
 
-form textarea {
+.form-group textarea {
   resize: vertical;
 }
 
@@ -118,7 +101,7 @@ form textarea {
   justify-content: center;
   flex-shrink: calc();
   margin-top: 20px;
-  width: 700px;
+  width: 40rem;
   background-color: #007bff;
   color: white;
   padding: 12px;
@@ -126,7 +109,6 @@ form textarea {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 div.header {
   background-color: #0056b3;
@@ -164,7 +146,4 @@ div.header {
   padding: 15px 20px;
   font-size: 0.9rem;
   border-top: 2px solid #0056b3;
-}
-.form-group {
-  width: 100%;
 }
